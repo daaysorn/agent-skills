@@ -1,0 +1,34 @@
+{
+  "sources": {
+    "cursor": "~/.cursor/mcp.json",
+    "claude": "~/.claude.json (mcpServers only)",
+    "codex": "~/.codex/config.toml (mcp sections only)"
+  },
+  "cursorServers": [
+    "@magicuidesign/mcp",
+    "Spitch",
+    "better-auth",
+    "betterstack",
+    "convex",
+    "excalidraw",
+    "heroui-react",
+    "jean",
+    "magicuidesign-mcp",
+    "moduos_coolify",
+    "paystack",
+    "refero",
+    "resend",
+    "sendbyte",
+    "shadcn"
+  ],
+  "claudeGlobalServers": [
+    "jean",
+    "pencil"
+  ],
+  "claudeProjectCount": 0,
+  "omitted": [
+    "~/.cursor/projects/mcp-auth.json (credentials)",
+    "All token/secret/env credential values"
+  ],
+  "note": "Secrets replaced with ${REDACTED}. Rehydrate locally before use."
+}

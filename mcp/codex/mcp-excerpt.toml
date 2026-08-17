@@ -1,0 +1,54 @@
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "$HOME/.codex"
+CODEX_HOME = "$HOME/.codex"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "028a14b6eaa6d98dac2aae00764345ab9f244801ed8493d42b9af3be5575006e,8785b5437d98636c3002d3d7e64b98db79c3b66870b1bd3d18dea953a99b1562"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = "Control desktop apps on macOS through Computer Use."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.727.40816"
+CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
+
+[mcp_servers.refero]
+url = "https://api.refero.design/mcp"
+
+[mcp_servers.refero.http_headers]
+Authorization = "${REDACTED}"
+
+[mcp_servers.computer-use]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+args = [ "mcp" ]
+cwd = "."
+enabled = false
+
+[mcp_servers.Mintlify]
+url = "https://mcp.mintlify.com"
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
+[mcp_servers.jean]
+command = "/Applications/Jean.app/Contents/MacOS/jean"
+args = [ "--jean-mcp-stdio" ]
+enabled = true
+
+[mcp_servers.jean.env]
+JEAN_MCP_SOCKET = "$HOME/Library/Application Support/com.jean.desktop/jean-mcp.sock"
+JEAN_MCP_TOKEN = "${REDACTED}"
+JEAN_MCP_SESSION = "${REDACTED}"
+JEAN_MCP_DEPTH = "0"
+JEAN_MCP_MODE = "prod"
+
+[mcp_servers.pencil]
+command = "$HOME/.pencil/mcp/cursor/out/mcp-server-darwin-arm64"
+args = [ "--app", "cursor", "--agent", "codexCLI" ]
+

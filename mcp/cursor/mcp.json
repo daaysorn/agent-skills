@@ -1,0 +1,119 @@
+{
+  "mcpServers": {
+    "heroui-react": {
+      "command": "bunx",
+      "args": [
+        "--bun",
+        "@heroui/react-mcp@latest"
+      ]
+    },
+    "better-auth": {
+      "url": "https://mcp.better-auth.com/mcp"
+    },
+    "shadcn": {
+      "command": "bunx",
+      "args": [
+        "--bun",
+        "shadcn@latest",
+        "mcp"
+      ],
+      "env": {
+        "INIT_CWD": "$HOME/programming/nextjs/moduos"
+      }
+    },
+    "convex": {
+      "command": "bunx",
+      "args": [
+        "--bun",
+        "convex@latest",
+        "mcp",
+        "start",
+        "--project-dir",
+        "$HOME/programming/nextjs/moduos"
+      ]
+    },
+    "refero": {
+      "url": "https://api.refero.design/mcp",
+      "headers": {
+        "Authorization": "${REDACTED}"
+      }
+    },
+    "resend": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "resend-mcp"
+      ],
+      "env": {
+        "RESEND_API_KEY": "${REDACTED}"
+      }
+    },
+    "paystack": {
+      "command": "npx",
+      "args": [
+        "@paystack/mcp-server",
+        "--api-key",
+        "${REDACTED}"
+      ]
+    },
+    "magicuidesign-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@magicuidesign/mcp@latest"
+      ]
+    },
+    "betterstack": {
+      "type": "http",
+      "url": "https://mcp.betterstack.com"
+    },
+    "Spitch": {
+      "name": "Spitch",
+      "url": "https://docs.spitch.app/mcp",
+      "headers": {}
+    },
+    "@magicuidesign/mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@magicuidesign/mcp@latest"
+      ]
+    },
+    "moduos_coolify": {
+      "url": "https://cloud.moduos.com/mcp",
+      "headers": {
+        "Authorization": "${REDACTED}"
+      }
+    },
+    "excalidraw": {
+      "url": "https://api.excalidraw.com/api/v1/mcp",
+      "headers": {
+        "Authorization": "${REDACTED}"
+      }
+    },
+    "sendbyte": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sendbyte/mcp"
+      ],
+      "env": {
+        "SENDBYTE_API_KEY": "${REDACTED}"
+      }
+    },
+    "jean": {
+      "args": [
+        "--jean-mcp-stdio"
+      ],
+      "command": "/Applications/Jean.app/Contents/MacOS/jean",
+      "env": {
+        "JEAN_MCP_DEPTH": "0",
+        "JEAN_MCP_MODE": "prod",
+        "JEAN_MCP_SESSION": "${REDACTED}",
+        "JEAN_MCP_SOCKET": "$HOME/Library/Application Support/com.jean.desktop/jean-mcp.sock",
+        "JEAN_MCP_TOKEN": "${REDACTED}"
+      },
+      "type": "stdio"
+    }
+  }
+}

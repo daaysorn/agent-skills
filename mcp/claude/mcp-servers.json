@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "jean": {
+      "args": [
+        "--jean-mcp-stdio"
+      ],
+      "command": "/Applications/Jean.app/Contents/MacOS/jean",
+      "env": {
+        "JEAN_MCP_DEPTH": "0",
+        "JEAN_MCP_MODE": "prod",
+        "JEAN_MCP_SESSION": "${REDACTED}",
+        "JEAN_MCP_SOCKET": "$HOME/Library/Application Support/com.jean.desktop/jean-mcp.sock",
+        "JEAN_MCP_TOKEN": "${REDACTED}"
+      },
+      "type": "stdio"
+    },
+    "pencil": {
+      "command": "$HOME/.pencil/mcp/cursor/out/mcp-server-darwin-arm64",
+      "args": [
+        "--app",
+        "cursor",
+        "--agent",
+        "claudeCodeCLI"
+      ],
+      "env": {},
+      "type": "stdio"
+    }
+  }
+}

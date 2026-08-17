@@ -19,9 +19,13 @@ sources/
 meta/
   skill-index.json                   # Generated inventory
   skills-lock.json                   # Local skills lockfile snapshot
+mcp/
+  cursor/ claude/ codex/             # Sanitized MCP configs (no credentials)
 ```
 
 Some sources overlap (especially **superpowers**). Copies are kept per install so you can compare versions.
+
+MCP configs live under [`mcp/`](./mcp/) with secrets redacted — see [`mcp/README.md`](./mcp/README.md).
 
 ## Counts
 
