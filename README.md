@@ -31,6 +31,15 @@ See `meta/skill-index.json` for the full list. Snapshot at collection time: **13
 
 Skills retain whatever licenses and notices shipped with their originals (for example under `_package/` or per-skill `LICENSE*`). This repo is a local backup/collection, not a claim of ownership over third-party skill content.
 
-## Usage
+## Usage / install on a new PC
 
-Point your agent at individual skill folders, or copy the ones you want into your tool’s skills directory.
+See **[INSTALL.md](./INSTALL.md)** for copy paths and Skills CLI (`npx skills`) instructions.
+
+Quick start:
+
+```bash
+git clone https://github.com/daaysorn/agent-skills.git
+cd agent-skills
+mkdir -p ~/.agents/skills
+cp -R sources/agents/* ~/.agents/skills/
+```
